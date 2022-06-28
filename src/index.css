@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: "Cutive Mono", monospace;
+  border: none;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 254, 205);
+}
+.root {
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+}
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.token-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.token-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5px;
+}
+.token-input {
+  flex-grow: 1;
+  background-color: #a4b8ac;
+}
+.token-save {
+  cursor: pointer;
+}
+.token-delete {
+  cursor: pointer;
+}
+.description {
+  background-color: #a4b8ac;
+}
+.filename {
+  background-color: #a4b8ac;
+}
+.code {
+  height: 344px;
+  background-color: #a4b8ac;
+}
+.token-input:focus,
+.description:focus,
+.filename:focus,
+.code:focus {
+  outline: none;
+  background-color: #afd3be;
+  transition: 0.5s;
+}
+.button {
+  cursor: pointer;
+}
+.button:active,
+.token-save:active,
+.token-delete:active {
+  background-color: #f5bd8f;
+  transition: 0.5s;
+}
