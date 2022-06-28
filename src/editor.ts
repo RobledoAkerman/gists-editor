@@ -9,7 +9,7 @@ export function init() {
         name="token" 
         class="token-input" 
         type="password" 
-        placeholder="Token"
+        placeholder="New token"
       />
       <button class="token-save">Save</button>
     </form>
@@ -82,7 +82,7 @@ export function init() {
     fetch("https://api.github.com/gists", {
       method: "post",
       headers: {
-        Authorization: "token " + token,
+        "Authorization": "token " + token,
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: `{
