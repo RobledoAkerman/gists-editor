@@ -38,8 +38,6 @@ export function init() {
     </form>
     `;
 
-  //   const buttonSave = div.querySelector(".token-save");
-
   const formToken = div.querySelector(".token-form");
   formToken.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -65,13 +63,12 @@ export function init() {
     const value = Object.fromEntries(data.entries());
 
     const token = localStorage.getItem("token");
-    // const token = value.token;
     const description = value.description;
     const filename = value.filename;
     const code = value.code;
 
     console.log(
-      " Description :" +
+      " Description: " +
         description +
         " Filename: " +
         filename +
